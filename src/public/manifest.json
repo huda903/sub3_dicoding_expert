@@ -1,0 +1,28 @@
+{
+    "name": "foodstreet",
+    "short_name": "foodstreet",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "images/icons/foodstreet-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/icons/foodstreet-256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "images/icons/foodstreet-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  

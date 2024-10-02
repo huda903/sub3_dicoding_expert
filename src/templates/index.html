@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./foodstreet.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>FOODSTREET</title>
+  </head>
+  <body>
+    <a href="#kontener" id="menujuKontenBrok">Menuju Konten</a>
+    <div id="splashScreen" style="display: flex; position: fixed; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: black; z-index: 3;">
+      <img class="lazyload" data-src="./foodstreet.png" style="width: 200px; height: 200px; filter: drop-shadow(4px 4px 5px white);" alt="logo" />
+    </div>
+    <div id="kontenerNavigasi" style="display: none; width: 100%; position: fixed; height: 2000px; z-index: 2">
+      <div id="naviagasiEtcetera" style="width: 50%; background-color: rgba(0, 0, 0, 0.31);"></div>
+      <nav id="navigasi_def">
+        <li id="tutupNavigasi" style="align-self: flex-end; background-color: red; list-style-type: none; font-weight: bold; width:fit-content; padding: 1px; border-radius: 5px; color: #ffffff;">
+          <button style="min-width: 44px; min-height: 44px; background-color: #ffffff00; border: 0px; font-size: 20px; color:#ffffff; font-weight: bold;" aria-label="tombolX">X</button>
+        </li>
+        <li style="list-style-type: none;"><a class="home_a" href="/" style="display: inline-block; min-width: 44px; min-height: 44px; padding: 10px; text-decoration: none; color: aliceblue; font-weight: bold;">HOME</a></li>
+        <li style="list-style-type: none;"><a class="favorite_a" href="/favorite" style="display: inline-block; min-width: 44px; min-height: 44px; padding: 10px; text-decoration: none; color: aliceblue; font-weight: bold;">FAVORITE</a></li>
+        <li style="list-style-type: none;"><a href="https://www.linkedin.com/in/ahmad-zain-al-huda-62577831b/" style="display: inline-block; min-width: 44px; min-height: 44px; padding: 10px; text-decoration: none; color: aliceblue; font-weight: bold;">ABOUT US</a></li>
+      </nav>
+    </div>
+    <header style="display: flex; position: fixed; width: 100%; justify-content: space-between; background-color: black; padding: 10px 20px; z-index: 1; border-bottom: 2px white solid;">
+      <a id="logo" href="/"><img class="lazyload" style="width: 100px; filter: drop-shadow(2px 2px 2px #ffffff);" data-src="./foodstreet.png" alt="logo"/></a>
+      <nav id="navigasi_abc" style="gap: 30px; align-items: center;">
+        <li style="list-style-type: none;"><a class="home_a" href="/" style="display: inline-block; min-width: 44px; min-height: 44px; padding: 10px; text-decoration: none; color: aliceblue; text-align: center; margin: auto;">HOME</a></li>
+        <li style="list-style-type: none;"><a class="favorite_a" href="/favorite" style="display: inline-block; min-width: 44px; min-height: 44px; padding: 10px; text-decoration: none; color: aliceblue; ">FAVORITE</a></li>
+        <li style="list-style-type: none;"><a href="https://www.linkedin.com/in/ahmad-zain-al-huda-62577831b/" style="display: inline-block; min-width: 44px; min-height: 44px; padding: 10px; text-decoration: none; color: aliceblue;">ABOUT US</a></li>
+      </nav>
+      <button id="hamburgerButton" aria-label="hamburgerButton">≡</button>
+    </header>
+    <main style="display: flex; flex-direction: column;">
+      <div style="height: 100px;"></div>
+      <picture style="display: flex; justify-content: center;">
+        <source media="(max-width: 600px)" srcset="./images/heros/hero-image_1-small.jpg">
+        <img id="jumboTron" style="margin: auto" class="lazyload" data-src="./images/heros/hero-image_1-large.jpg" alt="jumbotron"/>
+      </picture>
+      <div id="kk" style="display: flex; width: 100%; flex-direction: column; background-color: black; align-items: center; padding: 25px; gap: 20px">
+        <h3 id="sub_title" style="color: aliceblue;">EXPLORE FOODSTREET</h3>
+        <div id="kontener"></div>
+      </div>
+    </main>
+    <footer style="display: flex; align-items: center; height: 100px; color: white; background-color: black; justify-content: center; border-top: 2px white solid;">
+      <h2>FOODSTREET&#x24B8; - 2024</h2>
+    </footer>
+  </body>
+</html>

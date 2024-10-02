@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#menujuKontenBrok {
+  position: absolute;
+  background-color: aqua;
+  min-width: 44px;
+  min-height: 44px;
+  z-index: -1;
+}
+
+#menujuKontenBrok:focus {
+  z-index: 2;
+}
+
+img {
+  display: block;
+}
+
+#navigasi_abc{
+  display: flex;
+}
+
+#navigasi_def{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: black;
+  padding: 40px 25px;
+  gap: 30px;
+}
+
+#kontener{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#splash-screen {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(125, 204, 50);
+  z-index: 2;
+}
+
+#splash-screen img {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(4px 4px 5px #2222225b);
+}
+
+#hamburgerButton{
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 50px;
+  color: white;
+  background-color: black;
+  border: 0px;
+}
+
+.itemKontener{
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  margin: 20px;
+  min-height: 100px;
+  line-height: 25px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.textLinkDetail{
+  text-decoration: none;
+  color: black;
+}
+
+.imageItemContainer{
+  width: 100%;
+  margin: 20px 0px;
+}
+
+#kontenerDetail{
+  display: flex;
+  color: white;
+}
+
+#detailGambarRestaurant{
+  width: 60%;
+  margin: 20px auto;
+  border: 2px solid white;
+}
+
+#tempDetail1, #tempDetail2{
+  width: 50%;
+  border: 2px solid white;
+}
+
+#tempDetail2 section{
+  margin: 20px;
+}
+
+#tempDetail1 div{
+  display: flex;
+  width: 80px;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#tempDetail1 div p{
+  color: black;
+  font-size: 70px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  #jumboTron {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #kontener {
+    grid-template-columns: repeat(1, 1fr)
+  }
+  #hamburgerButton{
+    display: block;
+  }
+  #navigasi_abc{
+    display: none;
+  }
+  #kontenerDetail{
+    flex-direction: column;
+  }
+  #tempDetail1, #tempDetail2{
+    width: 100%;
+  }
+}
